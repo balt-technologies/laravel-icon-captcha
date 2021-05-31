@@ -1,0 +1,33 @@
+{
+    "name": "balt/laravel-icon-captcha",
+    "description": "This is a simple but safe icon captcha for laravel",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ediz Deniz",
+            "email": "ediz.deniz@balt.de"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "Balt\\LaravelIconCaptcha\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Balt\\LaravelIconCaptcha\\Tests\\": "tests"
+        }
+    },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "../../balt-technologies/laravel-icon-captcha"
+        }
+    ],
+    "require-dev": {
+        "phpunit/phpunit": "9.5.x-dev",
+        "orchestra/testbench": "6.x-dev"
+    }
+}

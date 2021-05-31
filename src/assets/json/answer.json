@@ -1,0 +1,70 @@
+{
+    "read": [
+        {
+            "icon": "read_1.svg"
+        },
+        {
+            "icon": "read_2.svg"
+        }
+    ],
+    "fruit": [
+        {
+            "icon": "fruit_1.svg"
+        },
+        {
+            "icon": "fruit_2.svg"
+        },
+        {
+            "icon": "fruit_3.svg"
+        }
+    ],
+    "drive": [
+        {
+            "icon": "drive_1.svg"
+        },
+        {
+            "icon": "drive_2.svg"
+        },
+        {
+            "icon": "drive_3.svg"
+        }
+    ],
+    "fly": [
+        {
+            "icon": "fly_1.svg"
+        },
+        {
+            "icon": "fly_2.svg"
+        }
+    ],
+    "home": [
+        {
+            "icon": "home_1.svg"
+        }
+    ],
+    "alphabet": [
+        {
+            "icon": "alphabet_1.svg"
+        },
+        {
+            "icon": "alphabet_2.svg"
+        },
+        {
+            "icon": "alphabet_3.svg"
+        },
+        {
+            "icon": "alphabet_4.svg"
+        }
+    ],
+    "number": [
+        {
+            "icon": "number_1.svg"
+        },
+        {
+            "icon": "number_2.svg"
+        },
+        {
+            "icon": "number_3.svg"
+        }
+    ]
+}
