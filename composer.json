@@ -1,5 +1,5 @@
 {
-    "name": "balt/laravel-icon-captcha",
+    "name": "balt-technologies/laravel-icon-captcha",
     "description": "This is a simple but safe icon captcha for laravel",
     "type": "project",
     "license": "MIT",
@@ -20,12 +20,6 @@
             "Balt\\LaravelIconCaptcha\\Tests\\": "tests"
         }
     },
-    "repositories": [
-        {
-            "type": "path",
-            "url": "../../balt-technologies/laravel-icon-captcha"
-        }
-    ],
     "require-dev": {
         "phpunit/phpunit": "9.5.x-dev",
         "orchestra/testbench": "6.x-dev"
