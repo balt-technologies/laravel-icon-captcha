@@ -29,6 +29,6 @@ class IconCaptchaServiceProvider extends ServiceProvider
             __DIR__ . '/assets/css' =>
                 resource_path('assets/vendor/laravel-icon-captcha/css'
                 )
-        ]);
+        ], 'laravel-icon-captcha');
     }
 }
