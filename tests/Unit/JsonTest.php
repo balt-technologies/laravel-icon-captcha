@@ -9,12 +9,6 @@ use function Webmozart\Assert\Tests\StaticAnalysis\length;
 
 class JsonTest extends TestCase
 {
-
-    public function testAlwaysTrue(): void
-    {
-        self::assertTrue(true);
-    }
-
     public function testRandomElementFunction(): void
     {
         $jsonService = app(JsonService::class);
@@ -23,10 +17,12 @@ class JsonTest extends TestCase
         $randomElementsArray = [];
 
         for ($i = 0, $iMax = count($testArray); $i <= $iMax; $i++) {
+
             //Get two random elements
             $fre = $jsonService->getRandomElement($testArray);
             $sre = $jsonService->getRandomElement($testArray);
             $randomElementsArray[] = $fre;
+
             //Compare if they are really "random"
             if ($fre !== $sre) {
                 self::assertNotEquals($fre, $sre);
@@ -35,6 +31,7 @@ class JsonTest extends TestCase
             }
         }
 
+        //TO VERIFY THAT A RANDOMLY CREATED ARRAY IS NOT EQUAL TO THE TEST DATA
         self::assertNotEquals($testArray, $randomElementsArray);
     }
 

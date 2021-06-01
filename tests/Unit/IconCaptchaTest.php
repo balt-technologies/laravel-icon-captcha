@@ -8,12 +8,6 @@ use Balt\LaravelIconCaptcha\Tests\TestCase;
 
 class IconCaptchaTest extends TestCase
 {
-
-    public function testAlwaysTrue(): void
-    {
-        self::assertTrue(true);
-    }
-
     public function testGetQuestion(): array
     {
         $iconCaptchaService = app(IconCaptchaService::class);
@@ -37,6 +31,7 @@ class IconCaptchaTest extends TestCase
 
         $correctAnswer = $iconCaptchaService->getCorrectAnswer($answers[$question['category']]);
 
+        //Testen ob die correct answer ordnungsgemäß in die Session übergeben wurde
         self::assertEquals($correctAnswer, session()->get('lic_correct_answer'));
 
         return $correctAnswer;
@@ -58,6 +53,7 @@ class IconCaptchaTest extends TestCase
 
         foreach ($wrongAnswers as $wrongAnswer)
         {
+            //Prüfen, ob alle wrongAnswers ungleich der richtigen Antwort ist
             self::assertNotEquals($wrongAnswer,$correctAnswer);
         }
 
@@ -74,6 +70,7 @@ class IconCaptchaTest extends TestCase
         $mergedAnswers = $iconCaptchaService->mergeAnswers($ca, $wa);
 
         $mergedCount = count([$ca]) + count($wa);
+
         self::assertCount($mergedCount, $mergedAnswers);
     }
 }
