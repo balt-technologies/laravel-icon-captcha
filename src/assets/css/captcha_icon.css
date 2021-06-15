@@ -1,47 +1,49 @@
 .lci-content-box {
     height: 60px;
     display: flex;
-    border: 1px solid black;
+    border: 1px solid #a8a8a8;
     width: 100%;
     max-width: 305px;
     justify-content: space-between;
-    align-items: center
+    align-items: center;
+    margin: 0 auto;
 }
 
 .lci-icon-wrapper-box {
     width: 100%;
     max-width: 245px;
     display: flex;
-    border-right: 1px solid black;
+    border-right: 1px solid #a8a8a8;
+    height: 60px;
 }
 
 .lci-icon-box {
     width: 50px;
     height: 50px;
-    padding: 5px;
+    margin: 5px;
 }
 
 .lci-icon-image {
     padding: 5px;
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     background-color: transparent;
     transition: background-color 0.2s;
 }
 
 .lci-icon-image:hover {
-    background-color: #00b89c;
+    background-color: #3490dc;
     transition: background-color 0.2s;
 }
 
 .lci-icon-image--selected {
-    background-color: #00b89c;
+    background-color: #3490dc;
 }
 
 .lci-reload-wrapper-box {
     width: 100%;
     transition: background-color 0.3s;
-    height: 60px;
+    height: 58px;
     max-width: 60px;
 }
 
@@ -62,7 +64,7 @@
 .lci-reload-image {
     height: 20px;
     width: 20px;
-    padding: 20px;
+    margin: 20px;
     background-color: transparent;
     transition: background-color 0.3s;
 }
